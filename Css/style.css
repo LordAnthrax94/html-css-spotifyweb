@@ -69,15 +69,49 @@ main{
   font-size: bold;
 }
 
+.topbar a:hover{
+  font-size: 1.2rem;
+}
+
 .sidebar{  
   width: 230px; 
-  height: 100%;    
+  height: 100%; 
+  overflow: auto;   
 }
 
 .fixtop{
   height: calc(100% - 120px);
-  overflow: auto; 
-  }
+  overflow: auto;
+  padding: 20px; 
+} 
+  
+.fixtop ul li{
+    list-style: none;
+    color: rgb(124, 124, 124);
+    margin: 10 0 10 0;
+    font-weight: bold;    
+}
+
+.fixtop ul li:hover{
+  color: white;
+  cur
+}
+
+.logo{ 
+  width: 70%;
+  padding-top: 10px;}
+
+.logo img{
+  width: 100%;
+  margin: 10 0 10 10;    
+}
+
+.icon img{
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: rgb(124, 124, 124);
+}
 
 .fixbot{  
   height: 120px;
@@ -86,13 +120,18 @@ main{
 }
 
 .download{
-  border-bottom: 1px solid lightgrey;
-  padding-bottom: 10px;
-  
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;  
 }
 
 .download a{
   text-decoration: none;
+  color: rgb(102, 102, 102);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.download a:hover{
   color: white;
 }
 
@@ -106,6 +145,7 @@ main{
   padding-top: 10px;
   text-align: left;
   color: white;
+  font-weight: bold; 
 }
 
 .user img{ 
@@ -116,9 +156,39 @@ main{
   vertical-align: middle;
 }
 
+/* MAIN right bar */
+.but{
+  position: relative;
+}
+
+.buttbar{
+  position: absolute;
+  display: none;
+  color: rgb(20, 25, 34);
+  border-bottom: 1px solid lightgreen;
+  padding: 0;
+}
+
+.but:hover .buttbar{
+  display: block;
+}
+
+
+.navigator{
+  justify-content: center;
+}
+
 .navigator ul li{
-  list-style: none;
-  display: inline-block; 
+  list-style: none;  
+  color: rgb(128, 130, 135);
+  font-weight: bold;
+  margin: 20px;  
+ }
+
+ .navigator ul li:hover{
+  color: white;
+  cursor: pointer;
+  border-bottom: 1px solid lightgreen 20px;
  }
 
 .maincont{  
@@ -138,23 +208,50 @@ main{
 
 .musicsel h1{
   padding: 20px;
+  color: white;  
 }
 
 .musicsel span{
   padding: 20px;
+  color: rgb(126, 128, 132);
+  font-weight: bold;
+  font-size: 0.9rem;  
 }
 
 .cards{
   padding: 10 20 10 0;
   width: calc(100% / 6);
+  color: white;
 }
 
 .cards img{
   width: 100%;
 }
 
+.display{
+  position: relative;
+}
+
+.none{
+  position: absolute;
+}
+
+.display:hover .none{
+  display: inline;
+}
+
+.round img{
+  border-radius: 50%;
+}
+
 .descript{
   text-align: center;
+  font-weight: bold;  
+}
+
+.descript p{
+  margin: 20 0 20 0;
+  font-size: 1.2rem;
 }
 
 .navigator ul li{
@@ -168,4 +265,32 @@ main{
   background-color: rgb(40, 40, 40);
   height: 90px;
   width: 100vw;
+}
+
+.footcard{
+  width: calc(100% / 3);
+}
+
+.play{
+  padding: 20 10 20 10; 
+  align-items: center;
+}
+
+.footleft i{
+  
+}
+
+.play p{
+  color: white;
+  font-weight: bold;  
+}
+
+.play span{
+  color: rgb(126, 128, 132);
+  font-weight: bold;
+}
+
+.play img{
+  width: 50px;
+  margin-right: 10px;
 }

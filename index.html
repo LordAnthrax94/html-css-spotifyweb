@@ -4,6 +4,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Css/style.css">
   <title>Spotify</title>
@@ -16,20 +17,30 @@
       <div class="sidebar black debug">
 
         <div class="fixtop">
-
+          <div class="Logo">
+            <img src="./Assets/img/logo.svg" alt="Logo">             
+          </div>
+          <nav>
+            <ul class="menu">
+              <li class="icon home"><img src="./Assets/img/home.svg" alt="home">Home</li>
+              <li class="icon"><img src="./Assets/img/search.svg" alt="search">Cerca</li>
+              <li class="icon"><img src="./Assets/img/libreria.svg" alt="libreria">La tua libreria</li>
+            </ul>
+          </nav>
+          
         </div>
         
         <div class="fixbot">
-          <div class="download"><img src="./Assets/img/download.svg" alt="download"><a href="">Scarica qui</a></div>
+          <div class="download"><img src="./Assets/img/download.svg" alt="download"><a href="">Installa App</a></div>
           <div class="user"><img src="./Assets/img/profile.svg" alt="profile"><span>John Doe</span></div>
         </div>
       </div>
 
       <div class="maincont primary-color debug">
         <div class="topbar utility-color debug dflex"><a href="">Effettua l'upgrade</a></div>
-          <nav class="navigator">
+          <nav class="navigator dflex">
             <ul>
-              <li>IN EVIDENZA</li>
+              <li class="but">IN EVIDENZA <span class="buttbar">IN EVIDENZA</span></li>
               <li>PODCAST</li>
               <li>CLASSIFICHE</li>
               <li>GENERI E MOOD</li>
@@ -44,42 +55,46 @@
               
               <div class="cards">
                 <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
+                <div class="descript">
+                  <p>Heavy Metal</p>
                   <span>Subtitle</span>
                 </div>
               </div>
               
               <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
+                <div class="discimg">
+                  <img class="display" src="./Assets/img/stranger.jpeg" alt="Metal">
+                  <img class="none" src="./Assets/img/metal_lifting.jpg" alt="">
+                </div>
+                <div class="descript"><p>Stranger Things, Vol 1(a Netflix Sriginal Series Soundtrack)</p>
+                  <span>Kyle Dixon & Michael Stein</span>
+                </div>
+              </div>
+
+              <div class="cards">
+                <div class="discimg"><img src="./Assets/img/aquietplace.jpeg" alt="Metal"></div>
+                <div class="descript"><p>A quiet place</p>
                   <span>Subtitle</span>
                 </div>
               </div>
 
               <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
+                <div class="discimg"><img src="./Assets/img/split.jpeg" alt="Metal"></div>
+                <div class="descript"><p>Split</p>
                   <span>Subtitle</span>
                 </div>
               </div>
 
               <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
+                <div class="discimg"><img src="./Assets/img/cure.jpeg" alt="Metal"></div>
+                <div class="descript"><p>A Cure for wellness</p>
                   <span>Subtitle</span>
                 </div>
               </div>
 
               <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
-                  <span>Subtitle</span>
-                </div>
-              </div>
-
-              <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
+                <div class="discimg"><img src="./Assets/img/sinister.jpeg" alt="Metal"></div>
+                <div class="descript"><p>Sinister</p>
                   <span>Subtitle</span>
                 </div>
               </div>
@@ -95,16 +110,16 @@
             <div class="musiclist dflex">
 
               <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
-                  <span>Subtitle</span>
+                <div class="discimg"><img src="./Assets/img/radar.jpeg" alt="Metal"></div>
+                <div class="descript"><p>Release Radar</p>
+                  
                 </div>
               </div>
 
               <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
-                  <span>Subtitle</span>
+                <div class="discimg"><img src="./Assets/img/mixdaily.jpeg" alt="Metal"></div>
+                <div class="descript"><p>Daily Mix</p>
+                  
                 </div>
               </div>
 
@@ -145,11 +160,19 @@
             <div class="musiclist dflex">
 
               <div class="cards">
-                <div class="discimg"><img src="./Assets/img/metal_lifting.jpg" alt="Metal"></div>
-                <div class="descript"><p>Lorem ipsum dolor sit.</p>
-                  <span>Subtitle</span>
+                <div class="discimg round"><img src="./Assets/img/youg.jpeg" alt="Metal"></div>
+                <div class="descript"><p>Lana del Rey</p>
+                 
                 </div>
-              </div>                
+              </div> 
+              
+              <div class="cards">
+                <div class="discimg round"><img src="./Assets/img/einaudi.jpeg" alt="Metal"></div>
+                <div class="descript"><p>Ludovico Einaudi</p>
+                  
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -160,10 +183,23 @@
   </main>
 
   <footer>
-    <div class="footot">
-     <div></div>
-     <div></div>
-     <div></div>
+    <div class="footot dflex">
+      
+     <div class="footcard play dflex">
+      <div>
+        <img src="./Assets/img/sinister.jpeg" alt="playicon">
+      </div>
+      <div class="footleft">
+        <p>Sinister</p> 
+        <span>Brano nome</span>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+
+      </div>
+      
+     </div>
+     <div class="footcard playbar"></div>
+     <div class="footcard icons"></div>
     </div>
     
 
