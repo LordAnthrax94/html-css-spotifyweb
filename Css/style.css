@@ -82,7 +82,8 @@ main{
 .fixtop{
   height: calc(100% - 120px);
   overflow: auto;
-  padding: 20px; 
+  padding: 20px;
+  color: white; 
 } 
   
 .fixtop ul li{
@@ -94,7 +95,7 @@ main{
 
 .fixtop ul li:hover{
   color: white;
-  cur
+  cursor: pointer;
 }
 
 .logo{ 
@@ -222,22 +223,27 @@ main{
   padding: 10 20 10 0;
   width: calc(100% / 6);
   color: white;
+  position: relative;
 }
 
 .cards img{
   width: 100%;
 }
 
-.display{
-  position: relative;
+.discimg i{
+  color: gray;
 }
 
-.none{
+.playicon{
   position: absolute;
+  display: none;
+  top: 50;
+  left: 50;
+  transform: translate( 50px , 50px);  
 }
 
-.display:hover .none{
-  display: inline;
+.cards:hover .playicon{
+  display: block;
 }
 
 .round img{
@@ -276,8 +282,25 @@ main{
   align-items: center;
 }
 
-.footleft i{
-  
+.footleft span:hover{
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footicon{
+  align-self: center;
+  margin-left: 20px;
+}
+
+.footicon i{
+  color: rgb(135, 135, 135);
+  margin: 0 10 0 10;
+}
+
+.footicon i:hover{
+  color: white;
+  cursor: pointer;
 }
 
 .play p{
@@ -293,4 +316,28 @@ main{
 .play img{
   width: 50px;
   margin-right: 10px;
+}
+
+.playbar{
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.playmenu ul li{
+  list-style: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  font-size: bold;
+  margin: 0 20 0 20;
+}
+
+.playmenu li:nth-child(3){
+  font-size: 1.8rem;
+  vertical-align: center;
+}
+
+.playmenu li:nth-child(3):hover{
+  font-size: 2rem;
+  cursor: pointer;
 }
