@@ -100,7 +100,8 @@ main{
     list-style: none;
     color: rgb(124, 124, 124);
     margin: 10 0 10 0;
-    font-weight: bold;    
+    font-weight: bold;
+    border-left: 2px solid black;    
 }
 
 .fixtop ul li:hover{
@@ -203,7 +204,8 @@ main{
   list-style: none;  
   color: rgb(128, 130, 135);
   font-weight: bold;
-  margin: 20px;   
+  margin: 20px;
+  border-bottom: 2px solid rgb(20, 25, 34);   
  }
 
  .navigator ul li:hover{
