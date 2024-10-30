@@ -14,20 +14,42 @@
 
   <main>
     <section class="homeselect debug dflex">
-      <div class="sidebar black debug">
+      <div class="sidebar black">
 
         <div class="fixtop">
           <div class="Logo">
             <img src="./Assets/img/logo.svg" alt="Logo">             
           </div>
+          <div class="logosmall">
+            <img src="./Assets/img/logo-small.svg" alt="logosmall">
+          </div>
           <nav>
             <ul class="menu">
-              <li class="icon home"><img src="./Assets/img/home.svg" alt="home">Home</li>
-              <li class="icon"><img src="./Assets/img/search.svg" alt="search">Cerca</li>
-              <li class="icon"><img src="./Assets/img/libreria.svg" alt="libreria">La tua libreria</li>
+              <li class="icon home"><img src="./Assets/img/home.svg" alt="home"><span>Home</span></li>
+              <li class="icon"><img src="./Assets/img/search.svg" alt="search"><span>Cerca</span></li>
+              <li class="icon"><img src="./Assets/img/libreria.svg" alt="libreria"><span>La tua libreria</span></li>
             </ul>
           </nav>
           <h3>PLAYLIST</h3>
+          <div class="playtitl dflex">
+            <div class="box">+</div>
+
+            <p>Crea playlist</p>
+          </div>
+          <div class="playlistname">
+            <nav>
+              <ul>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+                <li>Nome playlist</li>
+              </ul>
+            </nav>
+          </div>
+         
           
         </div>
         
@@ -186,7 +208,7 @@
   <footer>
     <div class="footot dflex">
       
-     <div class="footcard play dflex">
+     <div class="play dflex debug">
       <div>
         <img src="./Assets/img/sinister.jpeg" alt="playicon">
       </div>
@@ -200,29 +222,37 @@
       </div>
      </div>
 
-     <div class="footcard playbar dflex">
-      <div class="playmenu">
-        <nav>
-          <ul>
-            <li><i class="fa-solid fa-shuffle"></i></li>
-            <li><i class="fa-solid fa-backward-step"></i></li>
-            <li><i class="fa-regular fa-circle-play"></i></li>
-            <li><i class="fa-solid fa-forward-step"></i></li>
-            <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
-          </ul>
-        </nav>       
-        
-      </div>
-      <div class="timebar">
+     <div class="playbar dflex debug">      
+        <div class="playbutt dflex">
+         <i class="fa-solid fa-shuffle"></i>
+         <i class="fa-solid fa-backward-step"></i>
+         <i class="fa-regular fa-circle-play"></i>
+         <i class="fa-solid fa-forward-step"></i>
+         <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>        
+        <div class="timebar dflex">
+          <span>0:25</span>
+          <div class="bar">
+            <div class="whitebar"></div>
+          </div>
+          
+          <span>4:35</span>
+        </div>
+      </div>     
 
-      </div>
-
-     </div>
-
-     <div class="footcard volume"></div>
-    </div>
+      <div class="volume debug">
+        <div class="footicon">
+          <i class="fa-solid fa-list"></i>
+          <i class="fa-solid fa-desktop"></i>
+          <i class="fa-solid fa-volume-high"></i>
+          <div class="timebar dflex">
+            
+            <div class="bar">
+              <div class="whitebar"></div>
+            </div>
+        </div>  
+     </div>   
     
-
   </footer>
   
 </body>
