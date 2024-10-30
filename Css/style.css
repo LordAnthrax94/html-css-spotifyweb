@@ -106,6 +106,7 @@ main{
 .fixtop ul li:hover{
   color: white;
   cursor: pointer;
+  border-left: 2px solid lawngreen;  
 }
 
 .logo{ 
@@ -137,15 +138,8 @@ main{
   font-weight: bold;
 }
 
-.playtitl:hover{
-  color: white;
-  cursor: pointer;   
-}
-
-
-
 .playlistname ul li{
-  margin-top: 20px;
+  margin-top: 20px;  
 }
 
 .box{
@@ -176,7 +170,7 @@ main{
 }
 
 .download a:hover{
-  color: white;
+  color: white;  
 }
 
 .download img{
@@ -201,25 +195,7 @@ main{
 }
 
 /* MAIN right bar */
-.but{
-  position: relative;
-}
-
-.buttbar{
-  position: absolute;
-  display: none;
-  color: rgb(20, 25, 34);
-  border-bottom: 1px solid lightgreen;
-  padding: 0;
-}
-
-.but:hover .buttbar{
-  display: block;
-}
-
-
-.navigator{
-  align-items: center;
+.topmenu{
   justify-content: center;
 }
 
@@ -227,13 +203,13 @@ main{
   list-style: none;  
   color: rgb(128, 130, 135);
   font-weight: bold;
-  margin: 20px;  
+  margin: 20px;   
  }
 
  .navigator ul li:hover{
   color: white;
   cursor: pointer;
-  border-bottom: 1px solid lightgreen 20px;
+  border-bottom: 2px solid lawngreen;
  }
 
 .maincont{    
@@ -469,8 +445,8 @@ main{
   .cards{
     width: calc(100% / 4)
   }
-  .navigator ul li{
-    width: calc(100% / 6);
+  .topmenu{
+    flex-wrap: wrap;
   }
 }
 
