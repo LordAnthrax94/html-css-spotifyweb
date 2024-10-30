@@ -351,7 +351,7 @@ main{
 }
 
 .playbutt i{
-  margin: 10 20 10 20;
+  margin: 5 10 5 10;
 }
 
 .playbutt i:nth-child(3){
@@ -414,7 +414,7 @@ main{
 .volumeup{
   position: relative;  
   border-bottom: 4px solid gray;
-  width: 100px; 
+  width: 80px; 
   border-radius: 30px;
 }
 
