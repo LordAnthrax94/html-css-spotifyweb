@@ -416,12 +416,6 @@ main{
   border-radius: 30px; 
 }
 
-.volume{
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wr;
-}
-
 .footicon{   
   margin-left: 20px;  
 }
@@ -434,6 +428,38 @@ main{
 .footicon i:hover{
   color: white;
   cursor: pointer;
+}
+
+.volume{
+  align-items: center;
+  margin-right: 20px;
+}
+
+.volumeup{
+  position: relative;  
+  border-bottom: 4px solid gray;
+  width: 100px; 
+  border-radius: 30px;
+}
+
+.volumetot{
+  position: absolute;
+  border-bottom: 4px solid white;
+  left: 0;
+  width: 30%;
+  border-radius: 30px;
+}
+
+.bar, .volumebar:hover{
+  cursor: pointer;
+}
+
+.volumeup:hover .volumetot{
+  border-bottom: 4px solid lawngreen;
+}
+
+.bar:hover .whitebar{
+  border-bottom: 4px solid lawngreen;
 }
 
 /* MEDIA QUERY */
