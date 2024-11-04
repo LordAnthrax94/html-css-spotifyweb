@@ -90,15 +90,30 @@ main{
 
 .fixtop{
   height: calc(100% - 120px);  
-  padding: 20px;  
+  padding: 20px;    
 } 
   
 .fixtop ul li{
+    position: relative;
     list-style: none;
     color: white;
     margin: 10 0 10 0;
     font-weight: bold;
-    opacity: 0.7;        
+    opacity: 0.7;          
+}
+
+.menu li::before{
+  content: "";
+  position: absolute;
+  display: inline-block; 
+  width: 3px;
+  background-color: black;  
+  height: 26px;
+  left: -20px;  
+}
+
+.menu li.active::before{
+  background-color: lawngreen;
 }
 
 .fixtop ul li:hover{
@@ -214,12 +229,27 @@ main{
 }
 
 .navigator ul li{
-  list-style: none;  
+  list-style: none;
+  position: relative;  
   color: rgb(128, 130, 135);
   font-weight: bold;
   margin: 20px;
   border-bottom: 2px solid rgb(20, 25, 34);   
  }
+
+ .navigator ul li::after{
+  content: "";
+  position: absolute;
+  display: inline-block; 
+  width: 30px;    
+  height: 3px;
+  bottom: -5px;
+  left:40px;    
+}
+
+.navigator ul li.active::after{
+  background-color: lawngreen;
+} 
 
  .navigator ul li:hover{
   color: white;
