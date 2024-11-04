@@ -85,13 +85,11 @@ main{
 
 .sidebar{  
   width: 230px; 
-  height: 100%; 
-  overflow: auto;   
+  height: 100%;     
 }
 
 .fixtop{
-  height: calc(100% - 120px);
-  overflow: auto;
+  height: calc(100% - 120px);  
   padding: 20px;
   color: rgb(124, 124, 124);
 } 
@@ -108,6 +106,10 @@ main{
   color: white;
   cursor: pointer;
   border-left: 2px solid lawngreen;  
+}
+
+.botmenu{   
+  height: calc(100% - 187px);  
 }
 
 .logo{ 
@@ -131,12 +133,17 @@ main{
 }
 
 .playtitl{
-  align-items: center;  
+  align-items: center;     
 }
 
 .playtitl p{
   margin-left: 10px;
   font-weight: bold;
+}
+
+.playlistname{
+  height: calc(100% - 103px);
+  overflow: auto;
 }
 
 .playlistname ul li{
